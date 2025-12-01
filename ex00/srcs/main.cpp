@@ -6,7 +6,7 @@
 /*   By: yuknakas <yuknakas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/30 18:11:14 by yuknakas          #+#    #+#             */
-/*   Updated: 2025/11/30 18:15:19 by yuknakas         ###   ########.fr       */
+/*   Updated: 2025/11/30 18:24:11 by yuknakas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ int	main( void )
 {
 	Zombie	*myZombie;
 
+	myZombie = NULL;
 	myZombie = myZombie->newZombie("Yuki");
 	myZombie->annouce();
 	myZombie->randomChump("Nayla");

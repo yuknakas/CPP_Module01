@@ -6,7 +6,7 @@
 /*   By: yuknakas <yuknakas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 01:02:57 by yuknakas          #+#    #+#             */
-/*   Updated: 2026/01/04 13:24:19 by yuknakas         ###   ########.fr       */
+/*   Updated: 2026/01/04 18:29:07 by yuknakas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,15 +40,8 @@ void	Harl::error( void )
 	std::cout << "[ ERROR ]\n" << STR_ERROR << std::endl;
 }
 
-void	Harl::complain( std::string level )
+void	Harl::complainFilter( std::string level )
 {
-	void		(Harl::*p_memberFUNC[])(void) =
-		{
-			&Harl::debug,
-			&Harl::info,
-			&Harl::warning,
-			&Harl::error
-		};
 	std::string	levels[] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 	int			i;
 
@@ -56,9 +49,27 @@ void	Harl::complain( std::string level )
 	while (i < 4)
 	{
 		if (!levels[i].compare(level.c_str()))
-			return ((this->*p_memberFUNC[i])());
+			break ;
 		i++;
 	}
-	std::cout << "Harl: Error Command " << level << " not found" << std::endl;
+	switch (i)
+	{
+		case (0):
+			this->debug();
+			__attribute__ ((fallthrough));
+		case (1):
+			this->info();
+			__attribute__ ((fallthrough));
+		case (2):
+			this->warning();
+			__attribute__ ((fallthrough));
+		case (3):
+			this->error();
+			break ;
+
+		default:
+			std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
+			break;
+	}
 	return ;
 }

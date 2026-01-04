@@ -6,7 +6,7 @@
 /*   By: yuknakas <yuknakas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 13:09:00 by yuknakas          #+#    #+#             */
-/*   Updated: 2026/01/04 13:21:01 by yuknakas         ###   ########.fr       */
+/*   Updated: 2026/01/04 18:27:23 by yuknakas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,13 +22,13 @@ int main( void )
 	// showing what Harl is able to say
 	std::cout << "Here is all Harl can say:" << std::endl;
 	std::cout << std::endl;
-	harl.complain("DEBUG");
+	harl.complainFilter("DEBUG");
 	std::cout << std::endl;
-	harl.complain("INFO");
+	harl.complainFilter("INFO");
 	std::cout << std::endl;
-	harl.complain("WARNING");
+	harl.complainFilter("WARNING");
 	std::cout << std::endl;
-	harl.complain("ERROR");
+	harl.complainFilter("ERROR");
 	std::cout << std::endl;
 
 	// accept user input
@@ -41,7 +41,7 @@ int main( void )
 			break;
 		if (!buff.compare("EXIT"))
 			break;
-		harl.complain(buff);
+		harl.complainFilter(buff);
 		std::cout << std::endl;
 	}
 	

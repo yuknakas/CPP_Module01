@@ -6,11 +6,12 @@
 /*   By: yuknakas <yuknakas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/31 20:19:16 by yuknakas          #+#    #+#             */
-/*   Updated: 2026/01/02 16:41:25 by yuknakas         ###   ########.fr       */
+/*   Updated: 2026/01/02 16:54:07 by yuknakas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
+#include <string>
 
 int	main( void )
 {

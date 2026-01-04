@@ -6,7 +6,7 @@
 /*   By: yuknakas <yuknakas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/30 13:29:06 by yuknakas          #+#    #+#             */
-/*   Updated: 2025/11/30 18:09:34 by yuknakas         ###   ########.fr       */
+/*   Updated: 2026/01/02 16:51:52 by yuknakas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,11 @@
 # include <iomanip>
 
 // ************************************************************************** //
-//                               Zombie Class                                //
+//                               Zombie Class                                 //
 // ************************************************************************** //
 
 class Zombie
 {
-private:
-	std::string	_name;
 public:
 	Zombie( std::string name );
 	~Zombie( void );
@@ -30,6 +28,8 @@ public:
 	void	annouce( void );
 	Zombie	*newZombie( std::string name );
 	void	randomChump( std::string name );
+private:
+	std::string	_name;
 };
 
 # define CRY "BraiiiiiiinnnzzzZ..."

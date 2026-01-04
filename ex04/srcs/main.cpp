@@ -6,7 +6,7 @@
 /*   By: yuknakas <yuknakas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 00:01:56 by yuknakas          #+#    #+#             */
-/*   Updated: 2026/01/04 00:40:49 by yuknakas         ###   ########.fr       */
+/*   Updated: 2026/01/04 00:47:04 by yuknakas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ int	main( int argc, char **argv )
 	s2 = argv[3];
 	
 	// opening file and checking if the file exists/opens
-	InFile.open(filename, std::ios::in);
+	InFile.open(filename.c_str(), std::ios::in);
 	if (!InFile.is_open())
 	{
 		std::cout << "err replace: error with opening " << filename << std::endl;
@@ -44,7 +44,7 @@ int	main( int argc, char **argv )
 	}
 
 	// preparing an outfile
-	OutFile.open((filename + ".replace"), std::ios::out | std::ios::trunc);
+	OutFile.open((filename + ".replace").c_str(), std::ios::out | std::ios::trunc);
 	if (!OutFile.is_open())
 	{
 		std::cout << "err replace: error with opening outfile (" << filename << ".replace)" << std::endl;

@@ -6,11 +6,11 @@
 #    By: yuknakas <yuknakas@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/04 13:17:54 by yuknakas          #+#    #+#              #
-#    Updated: 2026/01/04 13:18:41 by yuknakas         ###   ########.fr        #
+#    Updated: 2026/01/04 18:26:55 by yuknakas         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	=	harl
+NAME	=	harlFilter
 CPP		=	c++ -Wall -Wextra -Werror -std=c++98
 
 SRCS	=	srcs/main.cpp srcs/Harl.cpp

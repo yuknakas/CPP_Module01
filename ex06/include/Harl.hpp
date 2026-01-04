@@ -6,7 +6,7 @@
 /*   By: yuknakas <yuknakas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 01:02:54 by yuknakas          #+#    #+#             */
-/*   Updated: 2026/01/04 13:24:05 by yuknakas         ###   ########.fr       */
+/*   Updated: 2026/01/04 18:21:24 by yuknakas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ public:
 	// getter
 	// setter
 	// member func
-	void	complain( std::string level );
+	void	complainFilter( std::string level );
 
 private:
 	void	debug( void );

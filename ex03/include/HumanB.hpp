@@ -6,7 +6,7 @@
 /*   By: yuknakas <yuknakas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 20:35:44 by yuknakas          #+#    #+#             */
-/*   Updated: 2026/01/02 20:41:24 by yuknakas         ###   ########.fr       */
+/*   Updated: 2026/07/04 14:03:15 by yuknakas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ public:
 	// setter
 	// memeber functions
 	void	setWeapon( Weapon &new_weapon );
-	void	attack( void )const;
+	void	attack( void ) const;
 
 private:
 	std::string	m_name;		// name of HumanB

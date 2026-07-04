@@ -6,7 +6,7 @@
 /*   By: yuknakas <yuknakas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 01:02:54 by yuknakas          #+#    #+#             */
-/*   Updated: 2026/01/04 18:21:24 by yuknakas         ###   ########.fr       */
+/*   Updated: 2026/07/04 14:17:50 by yuknakas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,5 +47,10 @@ private:
 						"I've been coming for years whereas you started\n" \
 						"working here since last month."
 # define STR_ERROR	"This is unacceptable!\nI want to speak to the manager now."
+
+#define RED "\033[31m"
+#define GREEN "\033[32m"
+#define YELLOW "\033[33m"
+#define RESET "\033[0m"
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: yuknakas <yuknakas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 17:07:55 by yuknakas          #+#    #+#             */
-/*   Updated: 2026/01/02 20:36:45 by yuknakas         ###   ########.fr       */
+/*   Updated: 2026/07/04 14:03:19 by yuknakas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ public:
 	// getter
 	// setter
 	// memeber functions
-	void	attack( void )const;
+	void	attack( void ) const;
 
 private:
 	std::string	m_name;		// name of HumanA

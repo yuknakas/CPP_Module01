@@ -6,7 +6,7 @@
 /*   By: yuknakas <yuknakas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/30 18:11:14 by yuknakas          #+#    #+#             */
-/*   Updated: 2025/11/30 18:46:19 by yuknakas         ###   ########.fr       */
+/*   Updated: 2026/07/04 13:56:09 by yuknakas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	main( void )
 	i = 0;
 	while (i < count)
 	{
-		std::cout << "Zombie " << i << ":";
+		std::cout << "Zombie " << i << ": ";
 		hoard[i].annouce();
 		i++;
 	}

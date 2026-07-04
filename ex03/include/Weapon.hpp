@@ -6,7 +6,7 @@
 /*   By: yuknakas <yuknakas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 16:50:47 by yuknakas          #+#    #+#             */
-/*   Updated: 2026/01/02 17:19:32 by yuknakas         ###   ########.fr       */
+/*   Updated: 2026/07/04 14:00:12 by yuknakas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ public:
 	Weapon( const std::string new_type );
 	~Weapon();
 	// getter
-	std::string getType( void )const;
+	std::string getType( void ) const;
 	// setter
 	void		setType( const std::string new_type );
 	// memeber functions

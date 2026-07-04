@@ -6,7 +6,7 @@
 /*   By: yuknakas <yuknakas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/30 13:34:49 by yuknakas          #+#    #+#             */
-/*   Updated: 2025/11/30 18:37:44 by yuknakas         ###   ########.fr       */
+/*   Updated: 2026/07/04 13:54:15 by yuknakas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,9 @@
 
 Zombie::Zombie( void )
 {
-
 }
 
-Zombie::~Zombie( void )
+Zombie::~Zombie()
 {
 	std::cout << "Deconstructer Called for " << this->_name << std::endl;
 }

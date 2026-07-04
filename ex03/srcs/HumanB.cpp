@@ -6,7 +6,7 @@
 /*   By: yuknakas <yuknakas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 20:37:02 by yuknakas          #+#    #+#             */
-/*   Updated: 2026/01/02 20:49:40 by yuknakas         ###   ########.fr       */
+/*   Updated: 2026/07/04 14:02:01 by yuknakas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	HumanB::setWeapon( Weapon &new_weapon )
 	return ;
 }
 
-void	HumanB::attack( void )const
+void	HumanB::attack( void ) const
 {
 	if (!this->m_weapon)
 	{

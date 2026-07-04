@@ -6,7 +6,7 @@
 /*   By: yuknakas <yuknakas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/30 13:29:06 by yuknakas          #+#    #+#             */
-/*   Updated: 2026/01/02 16:51:20 by yuknakas         ###   ########.fr       */
+/*   Updated: 2026/07/04 13:53:57 by yuknakas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ class Zombie
 {
 public:
 	Zombie( void );
-	~Zombie( void );
+	~Zombie();
 	
 	void	annouce( void );
 	Zombie	*zombieHorde( int N, std::string name );

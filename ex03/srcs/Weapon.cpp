@@ -6,7 +6,7 @@
 /*   By: yuknakas <yuknakas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 17:02:50 by yuknakas          #+#    #+#             */
-/*   Updated: 2026/01/02 17:25:44 by yuknakas         ###   ########.fr       */
+/*   Updated: 2026/07/04 14:00:18 by yuknakas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ Weapon::~Weapon()
 {
 }
 
-std::string	Weapon::getType( void )const
+std::string	Weapon::getType( void ) const
 {
 	return (this->m_type);
 }

@@ -6,7 +6,7 @@
 /*   By: yuknakas <yuknakas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 01:02:57 by yuknakas          #+#    #+#             */
-/*   Updated: 2026/01/04 18:29:07 by yuknakas         ###   ########.fr       */
+/*   Updated: 2026/07/04 14:19:59 by yuknakas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,22 +22,22 @@ Harl::~Harl()
 
 void	Harl::debug( void )
 {
-	std::cout << "[ DEBUG ]\n" << STR_DEBUG << std::endl;
+	std::cout << GREEN << "[ DEBUG ]\n" << STR_DEBUG << RESET << std::endl;
 }
 
 void	Harl::info( void )
 {
-	std::cout << "[ INFO ]\n" << STR_INFO << std::endl;
+	std::cout << RED << "[ INFO ]\n" << STR_INFO << RESET << std::endl;
 }
 
 void	Harl::warning( void )
 {
-	std::cout << "[ WARNING ]\n" << STR_WARNING << std::endl;
+	std::cout << GREEN << "[ WARNING ]\n" << STR_WARNING << RESET << std::endl;
 }
 
 void	Harl::error( void )
 {
-	std::cout << "[ ERROR ]\n" << STR_ERROR << std::endl;
+	std::cout << RED << "[ ERROR ]\n" << STR_ERROR << RESET << std::endl;
 }
 
 void	Harl::complainFilter( std::string level )

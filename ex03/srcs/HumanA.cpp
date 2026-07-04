@@ -6,7 +6,7 @@
 /*   By: yuknakas <yuknakas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 17:20:42 by yuknakas          #+#    #+#             */
-/*   Updated: 2026/01/02 20:49:43 by yuknakas         ###   ########.fr       */
+/*   Updated: 2026/07/04 14:02:14 by yuknakas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,9 @@ HumanA::~HumanA()
 {
 }
 
-void	HumanA::attack( void )const
+void	HumanA::attack( void ) const
 {
-	std::cout << this->m_name << " attacks with their " << this->m_weapon.getType() << std::endl;
+	std::cout << this->m_name << " attacks with their "
+	<< this->m_weapon.getType() << std::endl;
 	return ;
 }
